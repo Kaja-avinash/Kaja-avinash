@@ -45,6 +45,7 @@ I'm an **AI and Data Science student** with strong hands-on project experience i
 - 📊 Interested in **Data Analysis, Visualization, and Insights**
 - 🧠 Building practical, problem-solving projects with real-world datasets
 - 🚀 Passionate about continuous learning and impactful innovation
+- 🚀 Built and deployed a full-stack AI Campus Recruitment System with cloud-hosted frontend, backend, AI services, and MongoDB Atlas integration
 
 **Career Goal:** Become a skilled **Software Engineer / Data Engineer** working on intelligent and data-driven systems.
 
@@ -62,6 +63,7 @@ I'm an **AI and Data Science student** with strong hands-on project experience i
 | 🧪 Domains Worked In | **6+** |
 | 🏢 Internship Experience | **Microsoft Elevate (Power BI)** |
 | 📚 Current Learning Tracks | **MLOps, LLMs, Advanced SQL** |
+| 🌟 Production Deployments | **3 Services Live** |
 
 </div>
 
@@ -119,14 +121,21 @@ I'm an **AI and Data Science student** with strong hands-on project experience i
 ## 📊 GitHub Statistics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Kaja-avinash&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00D9FF&icon_color=00D9FF&text_color=ffffff&rank_icon=github" height="170" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Kaja-avinash&theme=tokyonight&hide_border=true&background=0d1117&stroke=00D9FF" height="170" />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kaja-avinash&theme=tokyonight" />
+
+<br><br>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Kaja-avinash&theme=tokyonight" height="180" />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Kaja-avinash&theme=tokyonight" height="180" />
+
+<br><br>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Kaja-avinash&theme=tokyonight&utcOffset=5.5" height="180" />
+
 </div>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaja-avinash&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00D9FF&text_color=ffffff" height="170" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Kaja-avinash&theme=tokyonight&utcOffset=5.5" height="170" />
-</div>
 
 ---
 
@@ -154,12 +163,50 @@ I'm an **AI and Data Science student** with strong hands-on project experience i
 
 ---
 
+## 🌟 Flagship Project
+
+### 🚀 AI Campus Recruitment System
+
+A production-ready AI-powered recruitment platform designed to automate campus hiring workflows using intelligent resume analysis and candidate ranking.
+
+#### Key Features
+
+- AI-powered resume analysis
+- PDF/DOCX resume parsing
+- Skill extraction and matching
+- Student and recruiter dashboards
+- Job posting and application management
+- JWT authentication and authorization
+- Cloud deployment with Render
+- MongoDB Atlas integration
+
+#### Technology Stack
+
+- Frontend: React.js
+- Backend: Node.js + Express
+- AI Service: FastAPI
+- Database: MongoDB Atlas
+- Deployment: Render
+
+#### Live Demo
+
+- 🌐 Application: https://ai-campus-recruitment-system.onrender.com
+- ⚙️ Backend API: https://ai-campus-backend-g4i8.onrender.com
+- 🤖 AI Service: https://ai-campus-ai-service.onrender.com
+
+#### Repository
+
+https://github.com/Kaja-avinash/AI-Campus-Recruitment-System
+
+---
+
 ## 🚀 Featured Projects (Domain-wise)
 
 ### 🤖 AI / Machine Learning / Computer Vision
 
 | Project | Domain | Stack | Status |
 |---|---|---|---|
+| **AI-Campus-Recruitment-System** | Full Stack AI Recruitment Platform | React, Node.js, FastAPI, MongoDB, AI | 🚀 Live |
 | **AI-FACE-RECOGNITION** | Face Recognition | Python, OpenCV | ✅ Active |
 | **AI-HSV-Color-Tracking-with-OpenCV** | Computer Vision | Python, OpenCV | ✅ Active |
 | **AI-Real-Time-Face-Detection-System** | Real-Time Vision | Python, OpenCV | ✅ Active |
@@ -220,27 +267,75 @@ I'm an **AI and Data Science student** with strong hands-on project experience i
 
 ---
 
-## 📌 Top Repository Cards (Working)
+## 📌 Featured Projects
 
-<div align="center">
+<table>
+<tr>
 
-<a href="https://github.com/Kaja-avinash/AI-FACE-RECOGNITION">
-  <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=Kaja-avinash&repo=AI-FACE-RECOGNITION&theme=tokyonight&hide_border=true" />
-</a>
-<a href="https://github.com/Kaja-avinash/AI-Motion-Detection-System">
-  <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=Kaja-avinash&repo=AI-Motion-Detection-System&theme=tokyonight&hide_border=true" />
-</a>
+<td width="50%">
 
-<br/>
+### 🚀 AI Campus Recruitment System
 
-<a href="https://github.com/Kaja-avinash/Employee-Salary-Prediction">
-  <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=Kaja-avinash&repo=Employee-Salary-Prediction&theme=tokyonight&hide_border=true" />
-</a>
-<a href="https://github.com/Kaja-avinash/Data-science-capstone-project">
-  <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=Kaja-avinash&repo=Data-science-capstone-project&theme=tokyonight&hide_border=true" />
-</a>
+Full-stack AI-powered campus recruitment platform featuring resume analysis, applicant ranking, recruiter dashboards, and deployment-ready architecture.
 
-</div>
+**Tech Stack:** React • Node.js • FastAPI • MongoDB • AI/NLP
+
+🌐 **Live Demo:**  
+https://ai-campus-recruitment-system.onrender.com
+
+💻 **Repository:**  
+https://github.com/Kaja-avinash/AI-Campus-Recruitment-System
+
+</td>
+
+<td width="50%">
+
+### 🎭 DeepFake Sentinel
+
+Advanced AI-based deepfake detection system designed to identify manipulated images and media using machine learning techniques.
+
+**Tech Stack:** Python • OpenCV • Deep Learning • Computer Vision
+
+💻 **Repository:**  
+https://github.com/Kaja-avinash/DeepFake_Sentinel
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%">
+
+### 📚 NarrativeNexus
+
+Intelligent text analysis and content generation platform leveraging NLP techniques for semantic understanding and automated insights.
+
+**Tech Stack:** Python • NLP • Machine Learning • Data Analysis
+
+💻 **Repository:**  
+https://github.com/Kaja-avinash/NarrativeNexus
+
+</td>
+
+<td width="50%">
+
+### 📊 Customer Churn Prediction
+
+Machine learning solution for predicting customer attrition using historical customer behavior and predictive analytics.
+
+**Tech Stack:** Python • Scikit-Learn • Pandas • Data Science
+
+💻 **Repository:**  
+https://github.com/Kaja-avinash/Customer-Churn-Prediction
+
+</td>
+
+</tr>
+</table>
+
+
+
 
 ---
 
