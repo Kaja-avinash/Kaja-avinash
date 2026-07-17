@@ -1,6 +1,19 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:0f2027,20:203a43,40:2c5364,60:00c6ff,80:0072ff,100:00f2fe&text=K.%20Avinash&fontSize=60&fontColor=ffffff&fontAlign=50&fontAlignY=40&desc=Artificial%20Intelligence%20%7C%20Software%20Engineering%20%7C%20Data%20Science&descAlign=50&descAlignY=63&animation=fadeIn" width="100%" />
-</div>
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="./assets/hero-dark.svg">
+
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="./assets/hero-light.svg">
+
+    <img
+      src="./assets/hero-light.svg"
+      alt="K. Avinash Hero Banner"
+      width="100%">
+  </picture>
+</p>
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=900&size=36&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=900&lines=Hey+👋+I'm+K.+Avinash;AI+%26+Data+Science+Student;Building+Intelligent+Data-Driven+Solutions" alt="Typing SVG" />
