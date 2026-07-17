@@ -8,7 +8,13 @@
 
     <defs>
 
-        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <!-- Background Gradient -->
+
+        <linearGradient id="bg"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%">
 
             <stop offset="0%" stop-color="#08111F"/>
 
@@ -16,14 +22,75 @@
 
             <stop offset="100%" stop-color="#0F172A"/>
 
+            <animateTransform
+                attributeName="gradientTransform"
+                type="rotate"
+                values="0 .5 .5;360 .5 .5"
+                dur="25s"
+                repeatCount="indefinite"/>
+
         </linearGradient>
 
+        <!-- Cyan Glow -->
+
+        <radialGradient id="glow1">
+
+            <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.40"/>
+
+            <stop offset="100%" stop-color="#00D9FF" stop-opacity="0"/>
+
+        </radialGradient>
+
+        <!-- Blue Glow -->
+
+        <radialGradient id="glow2">
+
+            <stop offset="0%" stop-color="#2563EB" stop-opacity="0.35"/>
+
+            <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+
+        </radialGradient>
+
     </defs>
+
+    <!-- Background -->
 
     <rect
         width="1600"
         height="500"
         rx="24"
         fill="url(#bg)"/>
+
+    <!-- Left Glow -->
+
+    <circle
+        cx="250"
+        cy="120"
+        r="220"
+        fill="url(#glow1)">
+
+        <animate
+            attributeName="r"
+            values="210;240;210"
+            dur="8s"
+            repeatCount="indefinite"/>
+
+    </circle>
+
+    <!-- Right Glow -->
+
+    <circle
+        cx="1350"
+        cy="380"
+        r="250"
+        fill="url(#glow2)">
+
+        <animate
+            attributeName="r"
+            values="250;290;250"
+            dur="10s"
+            repeatCount="indefinite"/>
+
+    </circle>
 
 </svg>
