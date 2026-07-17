@@ -2,15 +2,13 @@
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="./assets/hero-dark.svg">
-
+      srcset="assets/hero-dark.svg">
     <source
       media="(prefers-color-scheme: light)"
-      srcset="./assets/hero-light.svg">
-
+      srcset="assets/hero-light.svg">
     <img
-      src="./assets/hero-light.svg"
       alt="K. Avinash Hero Banner"
+      src="assets/hero-dark.svg"
       width="100%">
   </picture>
 </p>
