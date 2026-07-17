@@ -1,0 +1,431 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="100%" height="100%" aria-label="K. Avinash - GitHub Profile Hero Banner (Light)">
+    
+    <style>
+        text {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .mono {
+            font-family: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+        }
+
+        /* Light Mode Specific Typography */
+        .title {
+            font-size: 64px;
+            font-weight: 800;
+            letter-spacing: -2.5px;
+            fill: url(#text-grad-primary);
+        }
+
+        .subtitle {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            fill: #0EA5E9;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-size: 22px;
+            font-weight: 500;
+            fill: #475569;
+            letter-spacing: -0.2px;
+        }
+
+        /* Metric Cards - Light Glass */
+        .metric-value {
+            font-size: 28px;
+            font-weight: 800;
+            fill: #0F172A;
+            letter-spacing: -1px;
+        }
+        .metric-label {
+            font-size: 11px;
+            font-weight: 600;
+            fill: #64748B;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+
+        /* Tech Chips - Light Mode */
+        .chip-text {
+            font-size: 13px;
+            font-weight: 600;
+            fill: #334155;
+            letter-spacing: 0.2px;
+        }
+        .chip-icon {
+            stroke: #0EA5E9;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* Light Mode Terminal Syntax */
+        .term-prompt { fill: #94A3B8; font-weight: 500; font-size: 14.5px; }
+        .term-cmd { fill: #0EA5E9; font-weight: 600; font-size: 14.5px; letter-spacing: 0.3px; }
+        .term-value { fill: #334155; font-weight: 500; font-size: 14.5px; letter-spacing: 0.2px; }
+        .term-accent { fill: #2563EB; font-weight: 600; font-size: 14.5px; }
+        
+        .signature { font-size: 11px; font-weight: 500; fill: #94A3B8; letter-spacing: 0.5px; }
+
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+        .cursor { animation: blink 1s step-end infinite; }
+
+        @keyframes float-slow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes float-medium {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-6px) translateX(4px); }
+        }
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+        @keyframes dash-flow { to { stroke-dashoffset: -120; } }
+
+        .anim-float-slow { animation: float-slow 10s ease-in-out infinite; }
+        .anim-float-medium { animation: float-medium 8s ease-in-out infinite; }
+        .anim-pulse { animation: pulse-glow 5s ease-in-out infinite; }
+        .anim-dash { stroke-dasharray: 4 12; animation: dash-flow 40s linear infinite; }
+    </style>
+
+    <defs>
+        <!-- Sophisticated Bright Background -->
+        <linearGradient id="bg-grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="50%" stop-color="#F8FAFC" />
+            <stop offset="100%" stop-color="#F1F5F9" />
+        </linearGradient>
+
+        <!-- Soft Light Ambient Glows (Deepened for more volume) -->
+        <radialGradient id="glow-cyan" cx="85%" cy="15%" r="65%">
+            <stop offset="0%" stop-color="rgba(14, 165, 233, 0.08)" />
+            <stop offset="100%" stop-color="rgba(14, 165, 233, 0)" />
+        </radialGradient>
+        <radialGradient id="glow-blue" cx="15%" cy="85%" r="60%">
+            <stop offset="0%" stop-color="rgba(37, 99, 235, 0.07)" />
+            <stop offset="100%" stop-color="rgba(37, 99, 235, 0)" />
+        </radialGradient>
+        
+        <!-- Text Contrast Gradient -->
+        <linearGradient id="text-grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0F172A" />
+            <stop offset="60%" stop-color="#1E293B" />
+            <stop offset="100%" stop-color="#475569" />
+        </linearGradient>
+
+        <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0EA5E9" />
+            <stop offset="100%" stop-color="#2563EB" />
+        </linearGradient>
+
+        <!-- Light Glass Panel System (Apple-like realism) -->
+        <linearGradient id="glass-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(255,255,255,0.95)" />
+            <stop offset="100%" stop-color="rgba(241,245,249,0.7)" />
+        </linearGradient>
+        
+        <linearGradient id="glass-border" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="rgba(255,255,255,1)" />
+            <stop offset="100%" stop-color="rgba(148,163,184,0.35)" />
+        </linearGradient>
+        
+        <!-- Light Terminal Surfaces -->
+        <linearGradient id="term-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="100%" stop-color="#F8FAFC" />
+        </linearGradient>
+        <linearGradient id="glass-reflection" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(255,255,255,0.95)" />
+            <stop offset="30%" stop-color="rgba(255,255,255,0.15)" />
+            <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+        </linearGradient>
+
+        <!-- Light Mode Crisp Shadows (Deepened for more realism) -->
+        <filter id="shadow-soft" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.05" />
+        </filter>
+        <filter id="shadow-xl" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#0F172A" flood-opacity="0.08" />
+        </filter>
+        <filter id="glow-fx">
+            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- Textures & Patterns -->
+        <filter id="noise-overlay">
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+            <feColorMatrix type="matrix" values="1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 0.03 0" />
+        </filter>
+        <pattern id="dot-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1" fill="rgba(15, 23, 42, 0.03)" />
+        </pattern>
+        
+        <clipPath id="term-clip"><rect width="670" height="420" rx="14" /></clipPath>
+    </defs>
+
+    <g id="Background">
+        <rect width="1600" height="500" fill="url(#bg-grad-light)" />
+        
+        <!-- Ambient Depth -->
+        <circle cx="1350" cy="80" r="750" fill="url(#glow-cyan)" class="anim-float-slow" />
+        <circle cx="100" cy="450" r="600" fill="url(#glow-blue)" class="anim-float-medium" />
+        
+        <!-- Subtle GitHub Contribution Heatmap Motif (Top Right - Light Mode) -->
+        <g transform="translate(1300, 40)" opacity="0.04">
+            <!-- Col 1 -->
+            <rect x="0" y="0" width="12" height="12" rx="2" fill="#0EA5E9"/><rect x="0" y="16" width="12" height="12" rx="2" fill="#0EA5E9"/><rect x="0" y="32" width="12" height="12" rx="2" fill="#0F172A"/><rect x="0" y="48" width="12" height="12" rx="2" fill="#0EA5E9"/>
+            <!-- Col 2 -->
+            <rect x="16" y="0" width="12" height="12" rx="2" fill="#0F172A"/><rect x="16" y="16" width="12" height="12" rx="2" fill="#0EA5E9"/><rect x="16" y="32" width="12" height="12" rx="2" fill="#0EA5E9"/><rect x="16" y="48" width="12" height="12" rx="2" fill="#0EA5E9"/>
+            <!-- Col 3 -->
+            <rect x="32" y="0" width="12" height="12" rx="2" fill="#0EA5E9"/><rect x="32" y="16" width="12" height="12" rx="2" fill="#0F172A"/><rect x="32" y="32" width="12" height="12" rx="2" fill="#0F172A"/><rect x="32" y="48" width="12" height="12" rx="2" fill="#0EA5E9"/>
+            <!-- Col 4 -->
+            <rect x="48" y="0" width="12" height="12" rx="2" fill="#0EA5E9"/><rect x="48" y="16" width="12" height="12" rx="2" fill="#0EA5E9"/><rect x="48" y="32" width="12" height="12" rx="2" fill="#0EA5E9"/><rect x="48" y="48" width="12" height="12" rx="2" fill="#0F172A"/>
+            <!-- Col 5 -->
+            <rect x="64" y="0" width="12" height="12" rx="2" fill="#0F172A"/><rect x="64" y="16" width="12" height="12" rx="2" fill="#0EA5E9"/><rect x="64" y="32" width="12" height="12" rx="2" fill="#0F172A"/><rect x="64" y="48" width="12" height="12" rx="2" fill="#0EA5E9"/>
+        </g>
+
+        <!-- Grids and Texture -->
+        <rect width="1600" height="500" fill="url(#dot-grid)" />
+        <rect width="1600" height="500" filter="url(#noise-overlay)" opacity="0.6" style="mix-blend-mode: overlay;" />
+    </g>
+
+    <g id="Neural-Decorations">
+        <!-- Precision Beziers -->
+        <path d="M -50 350 C 250 400, 450 150, 1650 250" fill="none" stroke="rgba(15, 23, 42, 0.03)" stroke-width="1.5" class="anim-dash" />
+        <path d="M 0 420 C 350 450, 650 200, 1600 300" fill="none" stroke="rgba(14, 165, 233, 0.04)" stroke-width="1" class="anim-dash" style="animation-direction: reverse; animation-duration: 45s;" />
+        <path d="M 200 -50 C 450 150, 850 100, 1150 550" fill="none" stroke="rgba(15, 23, 42, 0.02)" stroke-width="1" />
+        
+        <!-- Glowing Intersection Nodes -->
+        <circle cx="342" cy="183" r="2.5" fill="#0EA5E9" opacity="0.4" filter="url(#glow-fx)" class="anim-pulse" />
+        <circle cx="780" cy="195" r="2" fill="#2563EB" opacity="0.5" class="anim-float-medium" />
+        <circle cx="1120" cy="355" r="3" fill="#94A3B8" opacity="0.4" filter="url(#glow-fx)" class="anim-float-slow" />
+        <circle cx="650" cy="70" r="4" fill="#0EA5E9" filter="blur(2px)" opacity="0.6" class="anim-pulse" />
+        <circle cx="1450" cy="400" r="6" fill="#2563EB" filter="blur(4px)" opacity="0.4" class="anim-float-slow" />
+    </g>
+
+    <g id="Left-Content" transform="translate(80, 0)">
+        
+        <!-- Premium Brand Mark (Geometric Hexagon + Node) -->
+        <g transform="translate(0, 52)">
+            <!-- Glass Hexagon Base -->
+            <polygon points="22,0 44,11 44,33 22,44 0,33 0,11" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+            <!-- Inner KA Abstraction -->
+            <path d="M12 12 L12 32 M12 22 L22 12 M13 21 L23 32 M20 22 L30 22 M25 12 L30 32 M25 12 L20 32" stroke="url(#brand-grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <!-- Glowing Core -->
+            <circle cx="32" cy="12" r="2.5" fill="#0EA5E9" filter="url(#glow-fx)" />
+        </g>
+
+        <!-- Typography Anchor -->
+        <text x="64" y="90" class="title">K. AVINASH</text>
+        
+        <!-- Updated Subtitle -->
+        <text x="4" y="140" class="subtitle">AI Engineer • Software Developer • Machine Learning</text>
+        
+        <!-- Tagline (Optimized Rhythm) -->
+        <g transform="translate(4, 185)">
+            <text x="0" y="0" class="tagline">Engineering intelligent software</text>
+            <text x="0" y="34" class="tagline">that transforms data into</text>
+            <text x="0" y="68" class="tagline">real-world impact.</text>
+        </g>
+
+        <!-- ACHIEVEMENT METRICS (Glass Cards) -->
+        <g id="Metrics" transform="translate(0, 280)">
+            <!-- Metric 1: Coding -->
+            <g transform="translate(0, 0)">
+                <rect width="135" height="64" rx="14" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <rect width="133" height="62" x="1" y="1" rx="13" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1"/>
+                <text x="18" y="30" class="metric-value">600+</text>
+                <text x="18" y="48" class="metric-label">Coding Problems</text>
+            </g>
+            <!-- Metric 2: Projects -->
+            <g transform="translate(150, 0)">
+                <rect width="115" height="64" rx="14" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <rect width="113" height="62" x="1" y="1" rx="13" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1"/>
+                <text x="18" y="30" class="metric-value">25+</text>
+                <text x="18" y="48" class="metric-label">Projects</text>
+            </g>
+            <!-- Metric 3: Internships -->
+            <g transform="translate(280, 0)">
+                <rect width="170" height="64" rx="14" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <rect width="168" height="62" x="1" y="1" rx="13" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1"/>
+                <text x="18" y="30" class="metric-value">4</text>
+                <text x="18" y="48" class="metric-label">Industry Internships</text>
+            </g>
+        </g>
+
+        <!-- ELEGANT ACHIEVEMENT RIBBON -->
+        <g id="Achievement-Ribbon" transform="translate(4, 356)" opacity="0.6">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="0" y="-10"><path d="M12 15l-3.5 2.5L9 13 6 10.5l4-.5L12 6l2 4 4 .5-3 2.5.5 4.5z"/></svg>
+            <text x="20" y="0" font-size="11.5px" font-weight="500" fill="#475569" letter-spacing="0.3px">Google Cloud Arcade Champion Tier <tspan fill="#94A3B8">•</tspan> NPTEL Silver Medal <tspan fill="#94A3B8">•</tspan> Top 10 State-Level Hackathon Finalist</text>
+        </g>
+
+        <g id="Tech-Stack" transform="translate(0, 368)">
+            
+            <!-- ROW 1 -->
+            <g transform="translate(0, 0)">
+                <rect width="90" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><path d="M14.5 4h-5c-2.5 0-3.5 1.5-3.5 3.5v2.5h8v-1c0-1-1-1.5-1-1.5... M14 9h-4.5c-3 0-4 1.5-4 4.5v2c0 2.5 1.5 3.5 3.5 3.5h5c2.5 0 3.5-1.5 3.5-3.5v-2.5h-8v1c0 1 1 1.5 1 1.5" /><circle cx="9" cy="6" r="1" fill="currentColor"/><circle cx="15" cy="18" r="1" fill="currentColor"/></svg></g>
+                <text x="32" y="23" class="chip-text">Python</text>
+            </g>
+            
+            <g transform="translate(100, 0)">
+                <rect width="75" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><path d="M18 8h1a4 4 0 0 1 0 8h-1 M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z M6 1v3 M10 1v3 M14 1v3"/></svg></g>
+                <text x="32" y="23" class="chip-text">Java</text>
+            </g>
+            
+            <g transform="translate(185, 0)">
+                <rect width="95" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></g>
+                <text x="32" y="23" class="chip-text">FastAPI</text>
+            </g>
+            
+            <g transform="translate(290, 0)">
+                <rect width="82" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg></g>
+                <text x="32" y="23" class="chip-text">React</text>
+            </g>
+            
+            <g transform="translate(382, 0)">
+                <rect width="115" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71 M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></g>
+                <text x="32" y="23" class="chip-text">LangChain</text>
+            </g>
+            
+            <g transform="translate(507, 0)">
+                <rect width="60" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><path d="M12 2l3 6 6 3-6 3-3 6-3-6-6-3 6-3z"/></svg></g>
+                <text x="32" y="23" class="chip-text">AI</text>
+            </g>
+
+            <!-- ROW 2 -->
+            <g transform="translate(0, 44)">
+                <rect width="155" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></g>
+                <text x="32" y="23" class="chip-text">Machine Learning</text>
+            </g>
+            
+            <g transform="translate(165, 44)">
+                <rect width="70" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg></g>
+                <text x="32" y="23" class="chip-text">NLP</text>
+            </g>
+            
+            <g transform="translate(245, 44)">
+                <rect width="115" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></g>
+                <text x="32" y="23" class="chip-text">LangGraph</text>
+            </g>
+            
+            <g transform="translate(370, 44)">
+                <rect width="120" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></g>
+                <text x="32" y="23" class="chip-text">PostgreSQL</text>
+            </g>
+            
+            <g transform="translate(500, 44)">
+                <rect width="65" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><line x1="6" y1="9" x2="6" y2="15"/><path d="M18 15V9a3 3 0 0 0-3-3H9"/></svg></g>
+                <text x="32" y="23" class="chip-text">Git</text>
+            </g>
+
+            <!-- ROW 3 -->
+            <g transform="translate(0, 88)">
+                <rect width="105" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><path d="M12 2C7 6 6 11 6 15c0 4 3 7 6 7s6-3 6-7c0-4-1-9-6-13z"/></svg></g>
+                <text x="32" y="23" class="chip-text">MongoDB</text>
+            </g>
+            
+            <g transform="translate(115, 88)">
+                <rect width="90" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><path d="M22 12.5c0-1.5-1.5-2.5-3-2.5h-13c-1.5 0-2.5 1-2.5 2.5 0 2 1.5 3.5 3 3.5h12c1.5 0 3.5-1.5 3.5-3.5z"/><path d="M6 10V8h2v2H6z M10 10V8h2v2h-2z M14 10V8h2v2h-2z M10 6V4h2v2h-2z"/></svg></g>
+                <text x="32" y="23" class="chip-text">Docker</text>
+            </g>
+            
+            <g transform="translate(215, 88)">
+                <rect width="130" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></g>
+                <text x="32" y="23" class="chip-text">Data Science</text>
+            </g>
+            
+            <g transform="translate(355, 88)">
+                <rect width="70" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><path d="M11 21A9 9 0 1 0 11 3a9 9 0 0 0 0 18z"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></g>
+                <text x="32" y="23" class="chip-text">SQL</text>
+            </g>
+            
+            <g transform="translate(435, 88)">
+                <rect width="90" height="36" rx="18" fill="url(#glass-bg)" stroke="url(#glass-border)" stroke-width="1.5" filter="url(#shadow-soft)"/>
+                <g transform="translate(12, 11)"><svg width="14" height="14" viewBox="0 0 24 24" class="chip-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></g>
+                <text x="32" y="23" class="chip-text">GitHub</text>
+            </g>
+        </g>
+    </g>
+
+    <g id="Terminal" transform="translate(850, 40)">
+        
+        <!-- Light Terminal Drop Shadow -->
+        <g filter="url(#shadow-xl)">
+            <rect width="670" height="420" rx="14" fill="url(#term-bg)" stroke="url(#glass-border)" stroke-width="1.5"/>
+        </g>
+        
+        <!-- Micro-Highlight Inner Ring -->
+        <rect width="668" height="418" x="1" y="1" rx="13" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1"/>
+        
+        <!-- Precision Glass Polygon -->
+        <polygon points="0,0 670,0 670,160 0,330" fill="url(#glass-reflection)" clip-path="url(#term-clip)"/>
+        
+        <!-- Sonoma Window Header -->
+        <g id="Term-Header">
+            <!-- Window Controls -->
+            <circle cx="26" cy="26" r="5.5" fill="#FF5F56" stroke="#E0443E" stroke-width="0.5"/>
+            <circle cx="46" cy="26" r="5.5" fill="#FFBD2E" stroke="#DEA123" stroke-width="0.5"/>
+            <circle cx="66" cy="26" r="5.5" fill="#27C93F" stroke="#1AAB29" stroke-width="0.5"/>
+            
+            <!-- Window Title -->
+            <text x="335" y="30" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" font-weight="600" fill="#94A3B8" letter-spacing="0.5px">avinash@portfolio:~</text>
+            
+            <!-- Header Divider -->
+            <line x1="0" y1="52" x2="670" y2="52" stroke="rgba(15,23,42,0.04)" stroke-width="1"/>
+        </g>
+
+        <g id="Term-Content" class="mono" transform="translate(36, 92)">
+            
+            <!-- $ whoami -->
+            <text x="0" y="0"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd">whoami</tspan></text>
+            <text x="0" y="26" class="term-value">K. Avinash</text>
+
+            <!-- $ role -->
+            <text x="0" y="70"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd">role</tspan></text>
+            <text x="0" y="96" class="term-value">AI Engineer</text>
+            <text x="0" y="120" class="term-value">Software Engineer</text>
+            <text x="0" y="144" class="term-value">AI &amp; Data Science Student</text>
+
+            <!-- $ current_focus -->
+            <text x="0" y="188"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd">current_focus</tspan></text>
+            <text x="0" y="214" class="term-value">LLMs</text>
+            <text x="0" y="238" class="term-value">RAG</text>
+            <text x="0" y="262" class="term-value">Backend Systems</text>
+
+            <!-- $ status -->
+            <text x="0" y="306"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd">status</tspan></text>
+            <text x="0" y="332" class="term-accent">Building intelligent software... <tspan class="cursor">█</tspan></text>
+        </g>
+    </g>
+
+    <!-- Final Polish Signature -->
+    <text x="80" y="475" class="signature">Designed &amp; Built by K. Avinash</text>
+
+</svg>
