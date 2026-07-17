@@ -490,7 +490,7 @@ https://github.com/Kaja-avinash/AI-Campus-Recruitment-System
 
 <br><br>
 
-<img width="48%" src="https://github-readme-streak-stats.herokuapp.com?user=Kaja-avinash&theme=tokyonight&hide_border=true" />
+<img width="48%" src="https://streak-stats.demolab.com?user=Kaja-avinash&theme=tokyonight&hide_border=true" />
 
 <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaja-avinash&layout=compact&theme=tokyonight&hide_border=true" />
 
