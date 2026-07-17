@@ -1,214 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600"
+     height="500"
+     viewBox="0 0 1600 500">
 
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1600"
-    height="500"
-    viewBox="0 0 1600 500">
+  <defs>
 
-    <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08111F"/>
+      <stop offset="50%" stop-color="#102A43"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
 
-        <!-- Background Gradient -->
+    <radialGradient id="glow1">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
 
-        <linearGradient id="bg"
-                        x1="0%"
-                        y1="0%"
-                        x2="100%"
-                        y2="100%">
+    <radialGradient id="glow2">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
 
-            <stop offset="0%" stop-color="#08111F"/>
+  </defs>
 
-            <stop offset="50%" stop-color="#102A43"/>
+  <!-- Background -->
+  <rect width="1600" height="500" rx="24" fill="url(#bg)"/>
 
-            <stop offset="100%" stop-color="#0F172A"/>
+  <!-- Glow Effects -->
+  <circle cx="250" cy="120" r="220" fill="url(#glow1)"/>
+  <circle cx="1360" cy="380" r="260" fill="url(#glow2)"/>
 
-            <animateTransform
-                attributeName="gradientTransform"
-                type="rotate"
-                values="0 .5 .5;360 .5 .5"
-                dur="25s"
-                repeatCount="indefinite"/>
+  <!-- ================= LEFT CONTENT ================= -->
 
-        </linearGradient>
+  <text x="90"
+        y="125"
+        fill="#FFFFFF"
+        font-size="56"
+        font-family="Arial"
+        font-weight="bold">
 
-        <!-- Cyan Glow -->
+      K. AVINASH
 
-        <radialGradient id="glow1">
+  </text>
 
-            <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.40"/>
+  <text x="90"
+        y="175"
+        fill="#38BDF8"
+        font-size="26"
+        font-family="Arial">
 
-            <stop offset="100%" stop-color="#00D9FF" stop-opacity="0"/>
+      Artificial Intelligence • Software Engineering • Data Science
 
-        </radialGradient>
+  </text>
 
-        <!-- Blue Glow -->
+  <text x="90"
+        y="235"
+        fill="#CBD5E1"
+        font-size="24"
+        font-family="Arial">
 
-        <radialGradient id="glow2">
+      Engineering intelligent software
 
-            <stop offset="0%" stop-color="#2563EB" stop-opacity="0.35"/>
+  </text>
 
-            <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+  <text x="90"
+        y="270"
+        fill="#CBD5E1"
+        font-size="24"
+        font-family="Arial">
 
-        </radialGradient>
+      that transforms data into real-world impact.
 
-    </defs>
+  </text>
 
-    <!-- Background -->
+  <!-- Tech Pills -->
 
-    <rect
-        width="1600"
-        height="500"
-        rx="24"
-        fill="url(#bg)"/>
+  <rect x="90" y="330" width="105" height="40" rx="20"
+        fill="#0F172A" stroke="#38BDF8"/>
 
-    <!-- Left Glow -->
+  <text x="118" y="356"
+        fill="#FFFFFF"
+        font-size="18"
+        font-family="Arial">
 
-    <circle
-        cx="250"
-        cy="120"
-        r="220"
-        fill="url(#glow1)">
+      Python
 
-        <animate
-            attributeName="r"
-            values="210;240;210"
-            dur="8s"
-            repeatCount="indefinite"/>
+  </text>
 
-    </circle>
+  <rect x="215" y="330" width="85" height="40" rx="20"
+        fill="#0F172A" stroke="#38BDF8"/>
 
-    <!-- Right Glow -->
+  <text x="242" y="356"
+        fill="#FFFFFF"
+        font-size="18"
+        font-family="Arial">
 
-    <circle
-        cx="1350"
-        cy="380"
-        r="250"
-        fill="url(#glow2)">
+      Java
 
-        <animate
-            attributeName="r"
-            values="250;290;250"
-            dur="10s"
-            repeatCount="indefinite"/>
+  </text>
 
-    </circle>
-<!-- ========================= -->
-<!-- Glass Terminal Card -->
-<!-- ========================= -->
+  <rect x="320" y="330" width="110" height="40" rx="20"
+        fill="#0F172A" stroke="#38BDF8"/>
 
-<!-- Card Shadow -->
+  <text x="340" y="356"
+        fill="#FFFFFF"
+        font-size="18"
+        font-family="Arial">
 
-<rect
-    x="1020"
-    y="90"
-    width="470"
-    height="280"
-    rx="22"
-    fill="#000000"
-    opacity="0.18"/>
+      FastAPI
 
-<!-- Glass Card -->
+  </text>
 
-<rect
-    x="1005"
-    y="75"
-    width="470"
-    height="280"
-    rx="22"
-    fill="#ffffff"
-    fill-opacity="0.08"
-    stroke="#38BDF8"
-    stroke-opacity="0.25"/>
+  <rect x="450" y="330" width="90" height="40" rx="20"
+        fill="#0F172A" stroke="#38BDF8"/>
 
-<!-- Terminal Header -->
+  <text x="475" y="356"
+        fill="#FFFFFF"
+        font-size="18"
+        font-family="Arial">
 
-<rect
-    x="1005"
-    y="75"
-    width="470"
-    height="45"
-    rx="22"
-    fill="#0F172A"/>
+      React
 
-<!-- Header Dots -->
+  </text>
 
-<circle cx="1038" cy="97" r="6" fill="#EF4444"/>
-<circle cx="1060" cy="97" r="6" fill="#F59E0B"/>
-<circle cx="1082" cy="97" r="6" fill="#22C55E"/>
+  <rect x="560" y="330" width="70" height="40" rx="20"
+        fill="#0F172A" stroke="#38BDF8"/>
 
-<!-- Terminal Title -->
+  <text x="585" y="356"
+        fill="#FFFFFF"
+        font-size="18"
+        font-family="Arial">
 
-<text
-    x="1125"
-    y="103"
-    fill="#F8FAFC"
-    font-size="18"
-    font-family="JetBrains Mono, monospace">
+      AI
 
-Terminal
+  </text>
 
-</text>
+  <!-- ================= TERMINAL ================= -->
 
-<!-- Terminal Content -->
+  <rect
+      x="980"
+      y="70"
+      width="520"
+      height="300"
+      rx="22"
+      fill="#FFFFFF"
+      fill-opacity="0.08"
+      stroke="#38BDF8"
+      stroke-opacity="0.30"/>
 
-<text
-    x="1040"
-    y="160"
-    fill="#38BDF8"
-    font-size="22"
-    font-family="JetBrains Mono, monospace">
+  <!-- Header -->
+
+  <rect
+      x="980"
+      y="70"
+      width="520"
+      height="48"
+      rx="22"
+      fill="#111827"/>
+
+  <circle cx="1015" cy="94" r="6" fill="#EF4444"/>
+  <circle cx="1038" cy="94" r="6" fill="#F59E0B"/>
+  <circle cx="1061" cy="94" r="6" fill="#22C55E"/>
+
+  <text
+      x="1200"
+      y="99"
+      fill="#FFFFFF"
+      font-size="18"
+      font-family="Arial">
+
+      Terminal
+
+  </text>
+
+  <!-- Terminal Body -->
+
+  <text
+      x="1020"
+      y="155"
+      fill="#38BDF8"
+      font-size="22"
+      font-family="monospace">
 
 $ whoami
 
-</text>
+  </text>
 
-<text
-    x="1040"
-    y="205"
-    fill="#F8FAFC"
-    font-size="22"
-    font-family="JetBrains Mono, monospace">
+  <text
+      x="1020"
+      y="195"
+      fill="#FFFFFF"
+      font-size="22"
+      font-family="monospace">
 
 K. Avinash
 
-</text>
+  </text>
 
-<text
-    x="1040"
-    y="245"
-    fill="#94A3B8"
-    font-size="20"
-    font-family="JetBrains Mono, monospace">
+  <text
+      x="1020"
+      y="235"
+      fill="#94A3B8"
+      font-size="20"
+      font-family="monospace">
 
-AI & Data Science Student
+AI &amp; Data Science Student
 
-</text>
+  </text>
 
-<text
-    x="1040"
-    y="285"
-    fill="#22D3EE"
-    font-size="20"
-    font-family="JetBrains Mono, monospace">
+  <text
+      x="1020"
+      y="275"
+      fill="#22D3EE"
+      font-size="20"
+      font-family="monospace">
 
 Building Intelligent Solutions
 
-</text>
+  </text>
 
-<!-- Blinking Cursor -->
+  <text
+      x="1020"
+      y="315"
+      fill="#38BDF8"
+      font-size="20"
+      font-family="monospace">
 
-<rect
-    x="1345"
-    y="271"
-    width="10"
-    height="24"
-    fill="#22D3EE">
+█
 
-    <animate
-        attributeName="opacity"
-        values="1;0;1"
-        dur="1s"
-        repeatCount="indefinite"/>
+  </text>
 
-</rect>
 </svg>
