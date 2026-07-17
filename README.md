@@ -474,7 +474,7 @@ https://github.com/Kaja-avinash/AI-Campus-Recruitment-System
 
 <br>
 
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kaja-avinash&theme=tokyonight" />
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kaja-avinash&theme=github_dark" />
 
 <br><br>
 
